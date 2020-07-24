@@ -10,8 +10,11 @@
  * @return {number}
  */
 var climbStairs = function (n) {
-console.log("climbStairs -> n", n)
+    if (n == 1) return 1
+    if (n == 2) return 2
+    return climbStairs(n - 1) + (n - 2)
 };
 // @lc code=end
 
-climbStairs(15)
+// climbStairs(15)
+console.log("climbStairs(15)", climbStairs(4))
